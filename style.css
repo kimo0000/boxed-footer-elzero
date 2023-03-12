@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(6, 1fr);
+    grid-template-areas: ". logo . latest . contact"
+                         ". logo . cairo cairo list"
+                         "empty social social cairo cairo list"
+                         "empty nav nav nav nav task";
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+.logo {
+    grid-area: logo;
+    background-color: gray;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.social {
+    grid-area: social;
+    background-color:orangered;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 0 15px;
+}
+
+.social i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+.latest {
+    grid-area: latest;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest_list {
+    grid-area: cairo;
+    background-color: gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.latest_list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.latest_list li i {
+    font-size: 18px;
+    
+}
+
+.latest_list li .ville {
+    font-size: 10px;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_list {
+    grid-area: list;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contact_list li {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.task {
+    grid-area: task;
+    background-color: red;
+    text-align: center;
+    line-height: 70px;
+    position: relative;
+    filter: brightness(60%);
+}
+
+.task span {
+    color: rgb(252, 206, 150);
+}
+
+.empty {
+    grid-area: empty;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
